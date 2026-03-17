@@ -22,13 +22,17 @@ export default function Hero() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-white mb-6">
-          Manchester<br />
-          <span style={{ color: "#C9A84C" }}>Crypto Meetup</span>
+          OpenClaw<br />
+          <span style={{ color: "#C9A84C" }}>Manchester Meetup</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-4">
-          The North's premier blockchain & crypto event — builders, founders,
+          The North's premier blockchain & AI event — builders, founders,
           and investors gathered in the heart of Manchester.
+        </p>
+
+        <p className="text-base italic mb-6" style={{ color: "#C9A84C" }}>
+          "An AI organised this. You just have to show up."
         </p>
 
         <p className="text-sm text-gray-500 mb-10">

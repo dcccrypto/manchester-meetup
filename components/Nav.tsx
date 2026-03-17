@@ -3,8 +3,8 @@ export default function Nav() {
     <nav className="fixed top-0 w-full z-50 border-b" style={{ background: "rgba(10,10,10,0.95)", borderColor: "#1F1F1F" }}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="font-bold text-lg tracking-tight">
-          <span style={{ color: "#C9A84C" }}>MCR</span>
-          <span className="text-white">Crypto</span>
+          <span style={{ color: "#C9A84C" }}>OpenClaw</span>
+          <span className="text-white"> Manchester</span>
         </div>
         <div className="hidden md:flex gap-8 text-sm text-gray-400">
           <a href="#agenda" className="hover:text-white transition-colors">Agenda</a>

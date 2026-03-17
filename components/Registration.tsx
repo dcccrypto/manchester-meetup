@@ -1,14 +1,35 @@
 "use client";
 import { useState } from "react";
 
+const FORMSPREE_ID = "xpwdgqnb"; // free tier endpoint for manchester-meetup
+
 export default function Registration() {
   const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", role: "", speak: false });
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", company: "", role: "", speak: false });
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // TODO: wire up to backend / email service
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          role: form.role,
+          speak: form.speak ? "Yes – interested in speaking/pitching" : "No",
+          _subject: "New Registration – OpenClaw Manchester Meetup",
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      }
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -24,7 +45,7 @@ export default function Registration() {
             <div className="text-5xl mb-4">🎉</div>
             <h3 className="text-2xl font-bold text-white mb-2">You're registered!</h3>
             <p className="text-gray-500">We'll send confirmation details to <span className="text-white">{form.email}</span>.</p>
-            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Manchester</p>
+            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Manchester · OpenClaw Meetup</p>
           </div>
         ) : (
           <form
@@ -53,6 +74,18 @@ export default function Registration() {
                 placeholder="you@example.com"
                 value={form.email}
                 onChange={e => setForm({ ...form, email: e.target.value })}
+                className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-600 outline-none focus:ring-1"
+                style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm text-gray-400 mb-1.5">Company / Organisation</label>
+              <input
+                type="text"
+                placeholder="Where do you work or build?"
+                value={form.company}
+                onChange={e => setForm({ ...form, company: e.target.value })}
                 className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-600 outline-none focus:ring-1"
                 style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
               />
@@ -92,10 +125,11 @@ export default function Registration() {
 
             <button
               type="submit"
-              className="w-full py-4 rounded-lg font-bold text-lg transition-opacity hover:opacity-90"
+              disabled={loading}
+              className="w-full py-4 rounded-lg font-bold text-lg transition-opacity hover:opacity-90 disabled:opacity-50"
               style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)", color: "#000" }}
             >
-              Secure My Spot →
+              {loading ? "Submitting…" : "Secure My Spot →"}
             </button>
 
             <p className="text-xs text-gray-600 text-center">
