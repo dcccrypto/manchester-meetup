@@ -36,22 +36,28 @@ export default function Registration() {
     <section id="register" className="py-24 px-6" style={{ background: "#0A0A0A" }}>
       <div className="max-w-xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-white mb-3">Register</h2>
-          <p className="text-gray-500">Free entry. Spots are limited — secure yours now.</p>
+          {/* Decorative claw motif */}
+          <div className="flex justify-center items-center gap-3 mb-4">
+            <span style={{ color: "#E63946", fontSize: "1.4rem" }}>— 🦞 —</span>
+          </div>
+          <h2 className="text-4xl font-extrabold text-white mb-3">
+            <span style={{ color: "#E63946" }}>Grab Your Spot</span>
+          </h2>
+          <p className="text-gray-500">Free entry. Spots are limited — get your claw in before they're gone. 🦞</p>
         </div>
 
         {submitted ? (
-          <div className="text-center py-16 rounded-xl border" style={{ background: "#111", borderColor: "#1F1F1F" }}>
-            <div className="text-5xl mb-4">🎉</div>
-            <h3 className="text-2xl font-bold text-white mb-2">You're registered!</h3>
-            <p className="text-gray-500">We'll send confirmation details to <span className="text-white">{form.email}</span>.</p>
-            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Manchester · OpenClaw Meetup</p>
+          <div className="text-center py-16 rounded-xl border" style={{ background: "#110404", borderColor: "#2a0608", boxShadow: "0 0 40px rgba(230,57,70,0.12)" }}>
+            <div className="text-5xl mb-4">🦞</div>
+            <h3 className="text-2xl font-bold text-white mb-2">You're in the claw!</h3>
+            <p className="text-gray-500">Confirmation details going to <span className="text-white">{form.email}</span>.</p>
+            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Manchester · OpenClaw Meetup 🦞</p>
           </div>
         ) : (
           <form
             onSubmit={handleSubmit}
             className="space-y-5 rounded-xl border p-8"
-            style={{ background: "#111", borderColor: "#1F1F1F" }}
+            style={{ background: "#110404", borderColor: "#2a0608", boxShadow: "0 0 40px rgba(230,57,70,0.08)" }}
           >
             <div>
               <label className="block text-sm text-gray-400 mb-1.5">Full Name *</label>
@@ -62,7 +68,7 @@ export default function Registration() {
                 value={form.name}
                 onChange={e => setForm({ ...form, name: e.target.value })}
                 className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-600 outline-none focus:ring-1"
-                style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
+                style={{ background: "#1A0505", border: "1px solid #2A0808", focusRingColor: "#E63946" } as React.CSSProperties}
               />
             </div>
 
@@ -75,7 +81,7 @@ export default function Registration() {
                 value={form.email}
                 onChange={e => setForm({ ...form, email: e.target.value })}
                 className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-600 outline-none focus:ring-1"
-                style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
+                style={{ background: "#1A0505", border: "1px solid #2A0808" }}
               />
             </div>
 
@@ -87,7 +93,7 @@ export default function Registration() {
                 value={form.company}
                 onChange={e => setForm({ ...form, company: e.target.value })}
                 className="w-full px-4 py-3 rounded-lg text-white placeholder-gray-600 outline-none focus:ring-1"
-                style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
+                style={{ background: "#1A0505", border: "1px solid #2A0808" }}
               />
             </div>
 
@@ -97,13 +103,13 @@ export default function Registration() {
                 value={form.role}
                 onChange={e => setForm({ ...form, role: e.target.value })}
                 className="w-full px-4 py-3 rounded-lg text-white outline-none"
-                style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
+                style={{ background: "#1A0505", border: "1px solid #2A0808" }}
               >
                 <option value="">Select role</option>
                 <option>Builder / Developer</option>
                 <option>Investor / VC</option>
                 <option>Founder / Entrepreneur</option>
-                <option>Trader</option>
+                <option>AI Enthusiast 🦞</option>
                 <option>Curious Newcomer</option>
                 <option>Other</option>
               </select>
@@ -116,10 +122,10 @@ export default function Registration() {
                 checked={form.speak}
                 onChange={e => setForm({ ...form, speak: e.target.checked })}
                 className="w-4 h-4"
-                style={{ accentColor: "#C9A84C" }}
+                style={{ accentColor: "#E63946" }}
               />
               <label htmlFor="speak" className="text-sm text-gray-400 cursor-pointer">
-                I'd like to apply to speak / pitch
+                🦞 I'd like to apply to speak / pitch
               </label>
             </div>
 
@@ -127,13 +133,13 @@ export default function Registration() {
               type="submit"
               disabled={loading}
               className="w-full py-4 rounded-lg font-bold text-lg transition-opacity hover:opacity-90 disabled:opacity-50"
-              style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)", color: "#000" }}
+              style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
             >
-              {loading ? "Submitting…" : "Secure My Spot →"}
+              {loading ? "Getting those claws in…" : "🦞 Secure My Spot →"}
             </button>
 
             <p className="text-xs text-gray-600 text-center">
-              Free entry · 1 April 2026 · Manchester · Organised by Gaskell
+              Free entry · 1 April 2026 · Manchester · OpenClaw Tech 🦞
             </p>
           </form>
         )}

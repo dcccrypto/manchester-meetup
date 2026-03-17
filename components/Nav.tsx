@@ -1,9 +1,10 @@
 export default function Nav() {
   return (
-    <nav className="fixed top-0 w-full z-50 border-b" style={{ background: "rgba(10,10,10,0.95)", borderColor: "#1F1F1F" }}>
+    <nav className="fixed top-0 w-full z-50 border-b" style={{ background: "rgba(10,10,10,0.96)", borderColor: "#1F1F1F" }}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="font-bold text-lg tracking-tight">
-          <span style={{ color: "#C9A84C" }}>OpenClaw</span>
+        <div className="font-bold text-lg tracking-tight flex items-center gap-2">
+          <span style={{ fontSize: "1.4rem" }}>🦞</span>
+          <span style={{ color: "#E63946" }}>OpenClaw</span>
           <span className="text-white"> Manchester</span>
         </div>
         <div className="hidden md:flex gap-8 text-sm text-gray-400">
@@ -14,10 +15,10 @@ export default function Nav() {
         </div>
         <a
           href="#register"
-          className="btn-gold text-sm px-4 py-2 rounded font-semibold"
-          style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)", color: "#000" }}
+          className="text-sm px-4 py-2 rounded font-semibold transition-opacity hover:opacity-90"
+          style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
         >
-          Register Free
+          🦞 Register Free
         </a>
       </div>
     </nav>

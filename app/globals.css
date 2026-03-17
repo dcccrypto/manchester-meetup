@@ -3,6 +3,10 @@
 :root {
   --gold: #C9A84C;
   --gold-light: #E8C96A;
+  --lobster: #E63946;
+  --lobster-light: #FF6B6B;
+  --lobster-dark: #B02535;
+  --coral: #FF7F6B;
   --dark: #0A0A0A;
   --dark-card: #111111;
   --dark-border: #1F1F1F;
@@ -18,6 +22,10 @@ body {
   color: var(--gold);
 }
 
+.lobster-red {
+  color: var(--lobster);
+}
+
 .btn-gold {
   background: linear-gradient(135deg, var(--gold), var(--gold-light));
   color: #000;
@@ -29,4 +37,62 @@ body {
 
 .btn-gold:hover {
   opacity: 0.9;
+}
+
+.btn-lobster {
+  background: linear-gradient(135deg, var(--lobster), var(--lobster-light));
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  transition: opacity 0.2s;
+}
+
+.btn-lobster:hover {
+  opacity: 0.9;
+}
+
+/* Claw divider — decorative SVG wave between sections */
+.claw-divider {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.claw-divider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Cpath d='M0 20 Q10 5 20 20 Q30 35 40 20 Q50 5 60 20 Q70 35 80 20 Q90 5 100 20 Q110 35 120 20' stroke='%23E63946' stroke-width='1.5' fill='none' opacity='0.4'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 120px 40px;
+}
+
+/* Lobster glow animation */
+@keyframes lobster-pulse {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.35; }
+}
+
+.lobster-glow {
+  animation: lobster-pulse 4s ease-in-out infinite;
+}
+
+/* Claw scratch texture overlay */
+.claw-scratch {
+  position: relative;
+}
+
+.claw-scratch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    rgba(230, 57, 70, 0.015) 8px,
+    rgba(230, 57, 70, 0.015) 9px
+  );
+  pointer-events: none;
 }
