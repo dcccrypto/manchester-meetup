@@ -5,11 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Manchester Crypto Meetup — April 1, 2026",
-  description: "Manchester's premier crypto & blockchain event. Organised by Gaskell. April 1, 2026.",
+  title: "OpenClaw Manchester Meetup — April 1, 2026",
+  description: "The North's premier AI builders meetup. Organised by Gaskell. April 1, 2026.",
   openGraph: {
-    title: "Manchester Crypto Meetup — April 1, 2026",
-    description: "Manchester's premier crypto & blockchain event. Organised by Gaskell.",
+    title: "OpenClaw Manchester Meetup — April 1, 2026",
+    description: "The North's premier AI builders meetup. Organised by Gaskell.",
     type: "website",
   },
 };
