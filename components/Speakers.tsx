@@ -7,10 +7,10 @@ const speakers = [
     emoji: "🤖",
   },
   {
-    name: "Speaker TBC",
-    role: "Keynote",
-    bio: "Speaker announcement coming soon. Follow us for updates. 🦞",
-    initials: "?",
+    name: "Keith Griggs",
+    role: "Confirmed Speaker",
+    bio: "Talk details coming soon. Stay tuned for updates — this one's worth the wait. 🦞",
+    initials: "KG",
     emoji: "🎙️",
   },
   {
