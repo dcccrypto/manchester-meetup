@@ -107,8 +107,8 @@ export default function Hero() {
           </div>
           <div>
             <div className="text-3xl mb-2">📍</div>
-            <div className="font-semibold text-white">Manchester City Centre</div>
-            <div className="text-sm text-gray-500 mt-1">Venue TBC</div>
+            <div className="font-semibold text-white">Friends Meeting House</div>
+            <div className="text-sm text-gray-500 mt-1">Manchester City Centre</div>
           </div>
           <div>
             <div className="text-3xl mb-2">🦞</div>

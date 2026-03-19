@@ -77,10 +77,12 @@ export default function RootLayout({
               "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
               "location": {
                 "@type": "Place",
-                "name": "Manchester City Centre",
+                "name": "Friends Meeting House",
                 "address": {
                   "@type": "PostalAddress",
+                  "streetAddress": "6 Mount Street",
                   "addressLocality": "Manchester",
+                  "postalCode": "M2 5NS",
                   "addressCountry": "GB"
                 }
               },
