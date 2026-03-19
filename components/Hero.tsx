@@ -113,9 +113,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="font-semibold text-white hover:underline"
               style={{ color: "#fff" }}
-            >
-              Friends Meeting House
-            </a>
+            >Friends Meeting House</a>
             <div className="text-sm text-gray-500 mt-1">6 Mount Street, M2 5NS</div>
           </div>
           <div>
