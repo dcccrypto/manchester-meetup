@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Countdown from "@/components/Countdown";
 
 export default function Hero() {
   return (
@@ -73,6 +74,8 @@ export default function Hero() {
         <p className="text-sm text-gray-500 mb-10">
           Organised by <span className="text-gray-300 font-semibold">Gaskell</span> · Powered by <span style={{ color: "#E63946", fontWeight: 600 }}>OpenClaw Tech</span>
         </p>
+
+        <Countdown />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

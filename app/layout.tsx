@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  alternates: {
+    canonical: "https://manchester-meetup.vercel.app",
+  },
   other: {
     "theme-color": "#E63946",
   },
