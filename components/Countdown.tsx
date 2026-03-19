@@ -16,7 +16,9 @@ function getTimeLeft() {
 }
 
 export default function Countdown() {
-  const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; minutes: number; seconds: number } | null>(null);
+  // Initialise with actual time left so SSR/hydration shows the correct countdown
+  // (not the "event is NOW" fallback which only applies post-event)
+  const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; minutes: number; seconds: number } | null>(getTimeLeft);
 
   useEffect(() => {
     setTimeLeft(getTimeLeft());
