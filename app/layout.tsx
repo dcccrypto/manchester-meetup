@@ -77,12 +77,10 @@ export default function RootLayout({
               "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
               "location": {
                 "@type": "Place",
-                "name": "Friends Meeting House",
+                "name": "Manchester City Centre",
                 "address": {
                   "@type": "PostalAddress",
-                  "streetAddress": "6 Mount Street",
                   "addressLocality": "Manchester",
-                  "postalCode": "M2 5NS",
                   "addressCountry": "GB"
                 }
               },
@@ -95,7 +93,7 @@ export default function RootLayout({
                 "price": "0",
                 "priceCurrency": "GBP",
                 "availability": "https://schema.org/InStock",
-                "url": "https://manchester-meetup.vercel.app/#register"
+                "url": "https://lu.ma/fd5atlfl"
               },
               "image": "https://manchester-meetup.vercel.app/logo-g-512.png",
               "url": "https://manchester-meetup.vercel.app"

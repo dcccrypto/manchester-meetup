@@ -79,11 +79,13 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#register"
+            href="https://lu.ma/fd5atlfl"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-opacity hover:opacity-90"
             style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
           >
-            🦞 Register Now — Free
+            🦞 Register on Luma — Free
           </a>
           <a
             href="#agenda"
@@ -107,14 +109,8 @@ export default function Hero() {
           </div>
           <div>
             <div className="text-3xl mb-2">📍</div>
-            <a
-              href="https://maps.google.com/?q=Friends+Meeting+House,+6+Mount+Street,+Manchester+M2+5NS"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-white hover:underline"
-              style={{ color: "#fff" }}
-            >Friends Meeting House</a>
-            <div className="text-sm text-gray-500 mt-1">6 Mount Street, M2 5NS</div>
+            <div className="font-semibold text-white">Manchester City Centre</div>
+            <div className="text-sm text-gray-500 mt-1">Exact venue to be announced</div>
           </div>
           <div>
             <div className="text-3xl mb-2">🦞</div>

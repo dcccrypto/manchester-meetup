@@ -7,10 +7,10 @@ const speakers = [
     emoji: "🤖",
   },
   {
-    name: "Keith Griggs",
+    name: "Keynote TBC",
     role: "Keynote Speaker",
-    bio: "Founder of Profitable AI. The AI CFO — bridging technical AI and real business profitability. Talk title to be confirmed. 🦞",
-    initials: "KG",
+    bio: "Keynote speaker to be announced. Stay tuned for updates — the North's AI builders deserve a sharp opening act. 🦞",
+    initials: "?",
     emoji: "🎙️",
   },
   {
