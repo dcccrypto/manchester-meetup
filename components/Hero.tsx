@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -6,6 +8,17 @@ export default function Hero() {
         background: "radial-gradient(ellipse at center top, #1a0404 0%, #0A0A0A 70%)",
       }}
     >
+      {/* Hero banner background image */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image
+          src="/hero-banner.png"
+          alt="OpenClaw Manchester Meetup hero banner"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.85) 60%, #0A0A0A 100%)" }} />
+      </div>
       {/* Lobster red glow — primary */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] pointer-events-none lobster-glow"
@@ -24,18 +37,17 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto">
-        {/* OpenClaw claw logo / badge */}
+        {/* OpenClaw logo badge */}
         <div className="flex justify-center mb-6">
           <div
-            className="w-24 h-24 rounded-full flex items-center justify-center border-2 shadow-lg"
+            className="w-24 h-24 rounded-full flex items-center justify-center border-2 shadow-lg overflow-hidden"
             style={{
               background: "radial-gradient(circle, #2a0508 0%, #1a0204 100%)",
               borderColor: "#E63946",
               boxShadow: "0 0 40px rgba(230,57,70,0.4), 0 0 80px rgba(230,57,70,0.15)",
-              fontSize: "3.5rem",
             }}
           >
-            🦞
+            <Image src="/logo.png" alt="OpenClaw logo" width={96} height={96} className="object-contain" />
           </div>
         </div>
 
