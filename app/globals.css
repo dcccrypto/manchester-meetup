@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --gold: #C9A84C;
-  --gold-light: #E8C96A;
+  --gold: #E63946;
+  --gold-light: #FF2D55;
   --lobster: #E63946;
   --lobster-light: #FF6B6B;
   --lobster-dark: #B02535;
@@ -19,7 +19,7 @@ body {
 }
 
 .gold {
-  color: var(--gold);
+  color: var(--lobster);
 }
 
 .lobster-red {
@@ -27,8 +27,8 @@ body {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: #000;
+  background: linear-gradient(135deg, #E63946, #FF2D55);
+  color: #fff;
   font-weight: 700;
   padding: 0.75rem 2rem;
   border-radius: 0.375rem;

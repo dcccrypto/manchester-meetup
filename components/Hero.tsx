@@ -14,11 +14,11 @@ export default function Hero() {
           filter: "blur(80px)",
         }}
       />
-      {/* Gold accent glow */}
+      {/* Secondary red accent glow */}
       <div
         className="absolute top-24 left-1/2 -translate-x-1/2 w-[400px] h-[300px] opacity-10 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse, #C9A84C 0%, transparent 70%)",
+          background: "radial-gradient(ellipse, #FF2D55 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />

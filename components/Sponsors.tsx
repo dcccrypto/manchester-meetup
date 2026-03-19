@@ -22,8 +22,8 @@ export default function Sponsors() {
           {[
             { tier: "🦞 Claw Sponsor", color: "#E63946" },
             { tier: "🦞 Claw Sponsor", color: "#E63946" },
-            { tier: "Gold Sponsor", color: "#C9A84C" },
-            { tier: "Gold Sponsor", color: "#C9A84C" },
+            { tier: "🔴 Red Sponsor", color: "#FF2D55" },
+            { tier: "🔴 Red Sponsor", color: "#FF2D55" },
           ].map((s, i) => (
             <div
               key={i}
