@@ -107,8 +107,16 @@ export default function Hero() {
           </div>
           <div>
             <div className="text-3xl mb-2">📍</div>
-            <div className="font-semibold text-white">Friends Meeting House</div>
-            <div className="text-sm text-gray-500 mt-1">Manchester City Centre</div>
+            <a
+              href="https://maps.google.com/?q=Friends+Meeting+House,+6+Mount+Street,+Manchester+M2+5NS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white hover:underline"
+              style={{ color: "#fff" }}
+            >
+              Friends Meeting House
+            </a>
+            <div className="text-sm text-gray-500 mt-1">6 Mount Street, M2 5NS</div>
           </div>
           <div>
             <div className="text-3xl mb-2">🦞</div>

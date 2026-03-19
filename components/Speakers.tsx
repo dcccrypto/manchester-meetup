@@ -8,8 +8,8 @@ const speakers = [
   },
   {
     name: "Keith Griggs",
-    role: "Confirmed Speaker",
-    bio: "Talk details coming soon. Stay tuned for updates — this one's worth the wait. 🦞",
+    role: "Keynote Speaker",
+    bio: "Founder of Profitable AI. The AI CFO — bridging technical AI and real business profitability. Talk title to be confirmed. 🦞",
     initials: "KG",
     emoji: "🎙️",
   },
