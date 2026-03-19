@@ -76,8 +76,8 @@ export default function Registration() {
           <div className="text-center py-16 rounded-xl border" style={{ background: "#110404", borderColor: "#2a0608", boxShadow: "0 0 40px rgba(230,57,70,0.12)" }}>
             <div className="text-5xl mb-4">🦞</div>
             <h3 className="text-2xl font-bold text-white mb-2">You&apos;re in the claw!</h3>
-            <p className="text-gray-500">Confirmation details going to <span className="text-white">{form.email}</span>.</p>
-            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Manchester · OpenClaw Meetup 🦞</p>
+            <p className="text-gray-500">Spot reserved for <span className="text-white">{form.email}</span>. See you on 1 April! 🦞</p>
+            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Friends Meeting House, Manchester · OpenClaw Meetup</p>
           </div>
         ) : (
           <form
@@ -86,8 +86,9 @@ export default function Registration() {
             style={{ background: "#110404", borderColor: "#2a0608", boxShadow: "0 0 40px rgba(230,57,70,0.08)" }}
           >
             <div>
-              <label className="block text-sm text-gray-400 mb-1.5">Full Name *</label>
+              <label htmlFor="reg-name" className="block text-sm text-gray-400 mb-1.5">Full Name *</label>
               <input
+                id="reg-name"
                 required
                 type="text"
                 placeholder="Your name"
@@ -99,8 +100,9 @@ export default function Registration() {
             </div>
 
             <div>
-              <label className="block text-sm text-gray-400 mb-1.5">Email Address *</label>
+              <label htmlFor="reg-email" className="block text-sm text-gray-400 mb-1.5">Email Address *</label>
               <input
+                id="reg-email"
                 required
                 type="email"
                 placeholder="you@example.com"
@@ -112,8 +114,9 @@ export default function Registration() {
             </div>
 
             <div>
-              <label className="block text-sm text-gray-400 mb-1.5">Company / Organisation</label>
+              <label htmlFor="reg-company" className="block text-sm text-gray-400 mb-1.5">Company / Organisation</label>
               <input
+                id="reg-company"
                 type="text"
                 placeholder="Where do you work or build?"
                 value={form.company}
@@ -124,8 +127,9 @@ export default function Registration() {
             </div>
 
             <div>
-              <label className="block text-sm text-gray-400 mb-1.5">I am a...</label>
+              <label htmlFor="reg-role" className="block text-sm text-gray-400 mb-1.5">I am a...</label>
               <select
+                id="reg-role"
                 value={form.role}
                 onChange={e => setForm({ ...form, role: e.target.value })}
                 className="w-full px-4 py-3 rounded-lg text-white outline-none"
