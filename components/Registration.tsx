@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 
-// Formsubmit.co endpoint — sends submissions to ai-manchester@whatsthescore.co.uk
-// First submission triggers an activation email; once confirmed all submissions arrive automatically.
-const FORMSUBMIT_EMAIL = "ai-manchester@whatsthescore.co.uk";
+// Formsubmit.co hashed endpoint — secure production endpoint for ai-manchester@whatsthescore.co.uk
+// Hash: f0000f81ca5c951d5d579afca769d32c (provided by FormSubmit on activation)
+const FORMSUBMIT_HASH = "f0000f81ca5c951d5d579afca769d32c";
 
 export default function Registration() {
   const [submitted, setSubmitted] = useState(false);
@@ -25,8 +25,8 @@ export default function Registration() {
         _template: "table",
       };
 
-      // Primary: formsubmit.co (sends email to ai-manchester@whatsthescore.co.uk)
-      const res = await fetch(`https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`, {
+      // Primary: formsubmit.co using hashed endpoint (production-secure)
+      const res = await fetch(`https://formsubmit.co/ajax/${FORMSUBMIT_HASH}`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
