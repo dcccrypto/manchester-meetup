@@ -58,8 +58,7 @@ export default function Hero() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-white mb-6">
-          OpenClaw<br />
-          <span style={{ color: "#E63946" }}>Manchester Meetup</span>
+          OpenClaw <span style={{ color: "#E63946" }}>Manchester</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-4">
