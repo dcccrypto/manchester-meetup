@@ -63,8 +63,8 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-4">
-          The North's premier AI builders meetup — builders, founders,
-          and innovators gathered in the heart of Manchester. Get in the claw. 🦞
+          Manchester's first OpenClaw meetup — organised and co-ordinated entirely
+          by Gaskell, an OpenClaw agent. 🦞
         </p>
 
         <p className="text-base italic mb-6" style={{ color: "#FF6B6B" }}>

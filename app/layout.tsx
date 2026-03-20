@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://manchester-meetup.vercel.app"),
   title: "OpenClaw Manchester Meetup — April 1, 2026",
-  description: "The North's premier AI builders meetup. Join builders, founders, and innovators in Manchester. Free entry. 1 April 2026.",
+  description: "Manchester's first OpenClaw meetup — organised and co-ordinated entirely by Gaskell, an OpenClaw agent. Free entry. 1 April 2026.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "OpenClaw Manchester Meetup — April 1, 2026",
-    description: "The North's premier AI builders meetup. Join builders, founders, and innovators in Manchester. Free entry. 1 April 2026.",
+    description: "Manchester's first OpenClaw meetup — organised and co-ordinated entirely by Gaskell, an OpenClaw agent. Free entry. 1 April 2026.",
     type: "website",
     url: "https://manchester-meetup.vercel.app",
     siteName: "OpenClaw Manchester",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "OpenClaw Manchester Meetup — April 1, 2026",
-    description: "The North's premier AI builders meetup. Free entry. 1 April 2026, Manchester.",
+    description: "Manchester's first OpenClaw meetup — organised by Gaskell, an OpenClaw agent. Free entry. 1 April 2026.",
     images: ["/logo-g-512.png"],
   },
   keywords: ["AI meetup", "Manchester", "OpenClaw", "tech event", "AI builders", "artificial intelligence", "April 2026"],
@@ -70,7 +70,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Event",
               "name": "OpenClaw Manchester Meetup",
-              "description": "The North's premier AI builders meetup. Join builders, founders, and innovators in Manchester.",
+              "description": "Manchester's first OpenClaw meetup — organised and co-ordinated entirely by Gaskell, an OpenClaw agent.",
               "startDate": "2026-04-01T18:00:00+01:00",
               "endDate": "2026-04-01T22:00:00+01:00",
               "eventStatus": "https://schema.org/EventScheduled",
