@@ -1,0 +1,59 @@
+const faqs = [
+  {
+    q: "Who is this for?",
+    a: "AI developers, ML practitioners, founders building with AI — and anyone curious about the state of AI in the North West. Whether you're shipping models in prod or just getting started, you'll fit in.",
+  },
+  {
+    q: "What should I expect?",
+    a: "Talks, demos, catering, and real networking. A keynote from a founder in the UK AI space, a practitioner panel, lightning talks from local projects, and open networking all evening. Free to attend.",
+  },
+  {
+    q: "Where exactly?",
+    a: "Manchester city centre. Exact address and venue details will be announced by 28 March — register now and you'll receive the full details by email.",
+  },
+  {
+    q: "Do I need to bring anything?",
+    a: "Just yourself. Register via Luma and you'll get a confirmation email. No ticket needed — just check in at the door.",
+  },
+];
+
+export default function FAQ() {
+  return (
+    <section id="faq" className="py-24 px-6" style={{ background: "#0D0D0D" }}>
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-14">
+          <div className="flex justify-center items-center gap-3 mb-4">
+            <span style={{ color: "#E63946", fontSize: "1.2rem" }}>— 🦞 —</span>
+          </div>
+          <h2 className="text-4xl font-extrabold text-white mb-3">
+            <span style={{ color: "#E63946" }}>About the Event</span>
+          </h2>
+          <p className="text-gray-500">Everything you need to know before you show up</p>
+        </div>
+
+        <div className="space-y-4">
+          {faqs.map((faq, i) => (
+            <div
+              key={i}
+              className="rounded-xl p-6 border"
+              style={{ background: "#111", borderColor: "#1F1F1F" }}
+            >
+              <div className="font-semibold text-white mb-2">{faq.q}</div>
+              <p className="text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <a
+            href="#register"
+            className="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-opacity hover:opacity-90"
+            style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
+          >
+            🦞 Register Free — I&apos;m In
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

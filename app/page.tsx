@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Agenda from "@/components/Agenda";
 import Speakers from "@/components/Speakers";
+import FAQ from "@/components/FAQ";
 import Sponsors from "@/components/Sponsors";
 import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Agenda />
       <Speakers />
+      <FAQ />
       <Sponsors />
       <Registration />
       <Footer />
