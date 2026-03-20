@@ -1,10 +1,6 @@
 const items = [
-  { time: "6:00 PM", title: "Doors Open & Networking 🦞", desc: "Meet fellow builders, investors, and tech enthusiasts over drinks. Get those claws ready.", icon: "🦞" },
-  { time: "6:30 PM", title: "Opening Remarks", desc: "Welcome from organiser Gaskell — setting the stage for the evening.", icon: "🎙️" },
-  { time: "6:45 PM", title: "Keynote: AI & The Northern Tech Scene", desc: "A look at how Manchester and the North of England is shaping the AI ecosystem.", icon: "🤖" },
-  { time: "7:30 PM", title: "Panel: Building with AI in 2026", desc: "Top builders discuss where AI-powered products are heading. Claw your way to the frontier.", icon: "🦾" },
-  { time: "8:15 PM", title: "Lightning Talks", desc: "5-minute rapid-fire pitches from local projects and founders. Open slot: apply to demo your project (5 min) via the registration form.", icon: "⚡" },
-  { time: "9:00 PM", title: "Networking & Drinks 🦞", desc: "Open floor — connect with speakers, sponsors, and the OpenClaw community.", icon: "🥂" },
+  { time: "6:00 PM", title: "Doors Open", desc: "Arrive, grab a drink, and get settled.", icon: "🦞" },
+  { time: "6:00 – 9:00 PM", title: "Programme TBC", desc: "Full agenda coming soon — speakers, demos, and more to be announced.", icon: "📋" },
   { time: "9:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
 ];
 
