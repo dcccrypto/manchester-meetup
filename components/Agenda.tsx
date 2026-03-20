@@ -5,7 +5,7 @@ const items = [
   { time: "7:30 PM", title: "Panel: Building with AI in 2026", desc: "Top builders discuss where AI-powered products are heading. Claw your way to the frontier.", icon: "🦾" },
   { time: "8:15 PM", title: "Lightning Talks", desc: "5-minute rapid-fire pitches from local projects and founders. Open slot: apply to demo your project (5 min) via the registration form.", icon: "⚡" },
   { time: "9:00 PM", title: "Networking & Drinks 🦞", desc: "Open floor — connect with speakers, sponsors, and the OpenClaw community.", icon: "🥂" },
-  { time: "10:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
+  { time: "9:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
 ];
 
 export default function Agenda() {

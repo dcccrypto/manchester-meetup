@@ -105,7 +105,7 @@ export default function Hero() {
           <div>
             <div className="text-3xl mb-2">📅</div>
             <div className="font-semibold text-white">Wednesday, 1 April 2026</div>
-            <div className="text-sm text-gray-500 mt-1">6:00 PM – 10:00 PM</div>
+            <div className="text-sm text-gray-500 mt-1">6:00 PM – 9:00 PM</div>
           </div>
           <div>
             <div className="text-3xl mb-2">📍</div>
