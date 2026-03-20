@@ -17,11 +17,19 @@ export default function Registration() {
         </div>
 
         <div
-          className="rounded-xl border p-8"
-          style={{ background: "#110404", borderColor: "#2a0608", boxShadow: "0 0 40px rgba(230,57,70,0.08)" }}
+          className="rounded-xl overflow-hidden"
+          style={{ boxShadow: "0 0 40px rgba(230,57,70,0.08)" }}
         >
-          <div className="luma-checkout" data-slug="fd5atlfl" data-show-description></div>
-          <Script src="https://embed.lu.ma/checkout-button.js" strategy="lazyOnload" />
+          <iframe
+            src="https://lu.ma/embed/event/fd5atlfl/simple"
+            width="100%"
+            height="450"
+            frameBorder="0"
+            style={{ border: "1px solid #2a0608", borderRadius: "12px", background: "#110404" }}
+            allowFullScreen
+            aria-hidden="false"
+            tabIndex={0}
+          />
         </div>
       </div>
     </section>
