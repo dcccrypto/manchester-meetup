@@ -29,6 +29,7 @@ export default function FAQ() {
             <span style={{ color: "#E63946" }}>About the Event</span>
           </h2>
           <p className="text-gray-500">Everything you need to know before you show up</p>
+          <p className="text-gray-400 mt-4 text-sm italic">This is our inaugural Manchester AI event — and we are doing it properly.</p>
         </div>
 
         <div className="space-y-4">
