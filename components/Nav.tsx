@@ -17,6 +17,7 @@ export default function Nav() {
         <div className="hidden md:flex gap-8 text-sm text-gray-400">
           <a href="#agenda" className="hover:text-white transition-colors">Agenda</a>
           <a href="#speakers" className="hover:text-white transition-colors">Speakers</a>
+          <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
           <a href="#sponsors" className="hover:text-white transition-colors">Sponsors</a>
           <a href="#register" className="hover:text-white transition-colors">Register</a>
         </div>
@@ -70,6 +71,7 @@ export default function Nav() {
         >
           <a href="#agenda" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Agenda</a>
           <a href="#speakers" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Speakers</a>
+          <a href="#faq" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>FAQ</a>
           <a href="#sponsors" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Sponsors</a>
           <a href="#register" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Register</a>
         </div>
