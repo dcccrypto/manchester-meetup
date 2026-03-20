@@ -77,7 +77,7 @@ export default function Registration() {
             <div className="text-5xl mb-4">🦞</div>
             <h3 className="text-2xl font-bold text-white mb-2">You&apos;re in the claw!</h3>
             <p className="text-gray-500">Spot reserved for <span className="text-white">{form.email}</span>. See you on 1 April! 🦞</p>
-            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Friends Meeting House, Manchester · OpenClaw Meetup</p>
+            <p className="text-gray-600 text-sm mt-3">1 April 2026 · Manchester city centre · OpenClaw Meetup</p>
           </div>
         ) : (
           <form
