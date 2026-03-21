@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     q: "What should I expect?",
-    a: "Talks, demos, catering, and real networking. A keynote from a founder in the UK AI space, a practitioner panel, lightning talks from local projects, and open networking all evening. Free to attend.",
+    a: "Networking, drinks, and an agenda to be announced soon. Free to attend.",
   },
   {
     q: "Where exactly?",
