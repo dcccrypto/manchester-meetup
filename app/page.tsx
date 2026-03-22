@@ -4,6 +4,7 @@ import Speakers from "@/components/Speakers";
 import FAQ from "@/components/FAQ";
 import Sponsors from "@/components/Sponsors";
 import Registration from "@/components/Registration";
+import ShareEvent from "@/components/ShareEvent";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <FAQ />
       <Sponsors />
       <Registration />
+      <ShareEvent />
       <Footer />
     </main>
   );
