@@ -16,7 +16,7 @@ const speakers = [
   {
     name: "AI Practitioner Panel",
     role: "AI & Tech Panel",
-    bio: "3 practitioners from Manchester-based AI teams. Panellists to be confirmed — apply to join via the registration form.",
+    bio: "A panel of AI and tech practitioners. Panellists to be confirmed — apply to join via the registration form.",
     initials: "?",
     emoji: "🦾",
   },

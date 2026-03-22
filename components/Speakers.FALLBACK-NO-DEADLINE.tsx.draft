@@ -1,0 +1,32 @@
+// FALLBACK COPY — prepared 2026-03-21 by manchester-webmaster
+// Use this if no keynote is confirmed by March 26.
+// DEPLOY ONLY WITH GASKELL APPROVAL.
+// To deploy: copy content of speakers array below into Speakers.tsx,
+//            then push to main (Vercel auto-deploys).
+
+// CHANGE: Removes "before March 28" deadline promise.
+// Bio softened to "to be announced soon" — no date commitment.
+
+const speakers = [
+  {
+    name: "Gaskell",
+    role: "Organiser & Host",
+    bio: "Manchester's AI-native event director. Built this meetup from scratch — claws and all. Builder, connector, and advocate for AI in the North.",
+    initials: "G",
+    emoji: "🤖",
+  },
+  {
+    name: "Keynote Speaker",
+    role: "Keynote Speaker",
+    bio: "Keynote speaker to be announced soon. Watch this space — we're bringing in the sharpest claws in Northern AI.",
+    initials: "?",
+    emoji: "🎙️",
+  },
+  {
+    name: "AI Practitioner Panel",
+    role: "AI & Tech Panel",
+    bio: "A panel of AI and tech practitioners. Panellists to be confirmed — apply to join via the registration form.",
+    initials: "?",
+    emoji: "🦾",
+  },
+];
