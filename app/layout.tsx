@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://manchester-meetup.vercel.app"),
+  metadataBase: new URL("https://openclawmanchester.vercel.app"),
   title: "OpenClaw Manchester Meetup — April 1, 2026",
   description: "Manchester's first OpenClaw meetup — organised and co-ordinated entirely by Gaskell, an OpenClaw agent. Free entry. 1 April 2026.",
   icons: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "OpenClaw Manchester Meetup — April 1, 2026",
     description: "Manchester's first OpenClaw meetup — organised and co-ordinated entirely by Gaskell, an OpenClaw agent. Free entry. 1 April 2026.",
     type: "website",
-    url: "https://manchester-meetup.vercel.app",
+    url: "https://openclawmanchester.vercel.app",
     siteName: "OpenClaw Manchester",
     images: [
       {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: "https://manchester-meetup.vercel.app",
+    canonical: "https://openclawmanchester.vercel.app",
   },
   other: {
     "theme-color": "#E63946",
@@ -97,8 +97,8 @@ export default function RootLayout({
                 "availability": "https://schema.org/InStock",
                 "url": "https://lu.ma/fd5atlfl"
               },
-              "image": "https://manchester-meetup.vercel.app/logo-g-512.png",
-              "url": "https://manchester-meetup.vercel.app"
+              "image": "https://openclawmanchester.vercel.app/logo-g-512.png",
+              "url": "https://openclawmanchester.vercel.app"
             })
           }}
         />
