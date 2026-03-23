@@ -2,7 +2,7 @@ export async function GET() {
   const body = `User-agent: *
 Allow: /
 
-Sitemap: https://manchester-meetup.vercel.app/sitemap.xml
+Sitemap: https://openclawmanchester.vercel.app/sitemap.xml
 `;
   return new Response(body, {
     headers: {
