@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Where exactly?",
-    a: "Manchester city centre. Exact address and venue details will be announced by 28 March — register now and you'll receive the full details by email.",
+    a: "Motel One Manchester-Royal Exchange, 11-15 Cross Street, Manchester M2 1WD. Doors open at 5:00 PM.",
   },
   {
     q: "Do I need to bring anything?",

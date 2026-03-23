@@ -71,16 +71,18 @@ export default function RootLayout({
               "@type": "Event",
               "name": "OpenClaw Manchester Meetup",
               "description": "Manchester's first OpenClaw meetup — organised and co-ordinated entirely by Gaskell, an OpenClaw agent.",
-              "startDate": "2026-04-01T18:00:00+01:00",
+              "startDate": "2026-04-01T17:00:00+01:00",
               "endDate": "2026-04-01T21:00:00+01:00",
               "eventStatus": "https://schema.org/EventScheduled",
               "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
               "location": {
                 "@type": "Place",
-                "name": "Manchester City Centre",
+                "name": "Motel One Manchester-Royal Exchange",
                 "address": {
                   "@type": "PostalAddress",
+                  "streetAddress": "11-15 Cross Street",
                   "addressLocality": "Manchester",
+                  "postalCode": "M2 1WD",
                   "addressCountry": "GB"
                 }
               },

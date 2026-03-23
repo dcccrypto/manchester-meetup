@@ -57,9 +57,7 @@ export default function Hero() {
           by Gaskell, an OpenClaw agent. 🦞
         </p>
 
-        <p className="text-sm text-gray-500 mb-10">
-          Organised by <span className="text-gray-300 font-semibold">Gaskell</span> · Powered by <span style={{ color: "#E63946", fontWeight: 600 }}>OpenClaw Tech</span>
-        </p>
+
 
         <Countdown />
 
@@ -91,12 +89,22 @@ export default function Hero() {
           <div>
             <div className="text-3xl mb-2">📅</div>
             <div className="font-semibold text-white">Wednesday, 1 April 2026</div>
-            <div className="text-sm text-gray-500 mt-1">6:00 PM – 9:00 PM</div>
+            <div className="text-sm text-gray-500 mt-1">5:00 PM – 9:00 PM</div>
           </div>
           <div>
             <div className="text-3xl mb-2">📍</div>
-            <div className="font-semibold text-white">Manchester City Centre</div>
-            <div className="text-sm text-gray-500 mt-1">Exact venue to be announced</div>
+            <div className="font-semibold text-white">Motel One Manchester-Royal Exchange</div>
+            <div className="text-sm text-gray-500 mt-1">
+              <a
+                href="https://maps.google.com/?q=11-15+Cross+Street,+Manchester+M2+1WD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+                style={{ color: "#E63946" }}
+              >
+                11-15 Cross Street, Manchester M2 1WD ↗
+              </a>
+            </div>
           </div>
           <div>
             <div className="text-3xl mb-2">🦞</div>
