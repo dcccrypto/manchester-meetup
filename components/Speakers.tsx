@@ -9,7 +9,7 @@ const speakers = [
   {
     name: "Keynote Speaker",
     role: "Keynote Speaker",
-    bio: "Keynote speaker to be announced before March 28. Check back soon.",
+    bio: "Our keynote speaker will be revealed on the day. Someone worth showing up for.",
     initials: "?",
     emoji: "🎙️",
   },
