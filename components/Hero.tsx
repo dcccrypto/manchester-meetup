@@ -38,18 +38,9 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto">
-        {/* OpenClaw logo badge */}
-        <div className="flex justify-center mb-6">
-          <div
-            className="w-24 h-24 rounded-full flex items-center justify-center border-2 shadow-lg overflow-hidden"
-            style={{
-              background: "radial-gradient(circle, #2a0508 0%, #1a0204 100%)",
-              borderColor: "#E63946",
-              boxShadow: "0 0 40px rgba(230,57,70,0.4), 0 0 80px rgba(230,57,70,0.15)",
-            }}
-          >
-            <Image src="/mascot.png" alt="OpenClaw Manchester mascot" width={120} height={120} className="object-contain" />
-          </div>
+        {/* Mascot */}
+        <div className="flex justify-center mb-8">
+          <Image src="/mascot.png" alt="OpenClaw Manchester mascot" width={200} height={200} className="object-contain drop-shadow-[0_0_30px_rgba(230,57,70,0.4)]" />
         </div>
 
         <div className="inline-block mb-6 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase border"
