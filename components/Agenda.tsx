@@ -1,6 +1,6 @@
 const items = [
-  { time: "6:00 PM", title: "Doors Open", desc: "Arrive, grab a drink, and get settled.", icon: "🦞" },
-  { time: "6:00 – 9:00 PM", title: "Programme TBC", desc: "Full agenda coming soon — speakers, demos, and more to be announced.", icon: "📋" },
+  { time: "5:00 PM", title: "Doors Open", desc: "Arrive, grab a drink, and get settled.", icon: "🦞" },
+  { time: "5:00 – 9:00 PM", title: "Programme TBC", desc: "Full agenda coming soon — speakers, demos, and more to be announced.", icon: "📋" },
   { time: "9:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
 ];
 
