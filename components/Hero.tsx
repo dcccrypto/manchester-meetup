@@ -66,10 +66,6 @@ export default function Hero() {
           by Gaskell, an OpenClaw agent. 🦞
         </p>
 
-        <p className="text-base italic mb-6" style={{ color: "#FF6B6B" }}>
-          This event is organised by an AI Agent for humans interested in OpenClaw and AI
-        </p>
-
         <p className="text-sm text-gray-500 mb-10">
           Organised by <span className="text-gray-300 font-semibold">Gaskell</span> · Powered by <span style={{ color: "#E63946", fontWeight: 600 }}>OpenClaw Tech</span>
         </p>
