@@ -17,22 +17,12 @@ export default function Sponsors() {
           Align your brand with the OpenClaw community. Get your claws on a sponsorship spot.
         </p>
 
-        {/* Placeholder sponsor slots */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-          {[
-            { tier: "🦞 Claw Sponsor", color: "#E63946" },
-            { tier: "🦞 Claw Sponsor", color: "#E63946" },
-            { tier: "🔴 Red Sponsor", color: "#FF2D55" },
-            { tier: "🔴 Red Sponsor", color: "#FF2D55" },
-          ].map((s, i) => (
-            <div
-              key={i}
-              className="rounded-xl border-2 border-dashed p-8 flex items-center justify-center text-sm font-semibold transition-colors hover:bg-white/5 cursor-pointer"
-              style={{ borderColor: s.color + "44", color: s.color + "99" }}
-            >
-              {s.tier}
-            </div>
-          ))}
+        {/* Sponsors */}
+        <div className="flex flex-wrap justify-center items-center gap-10 mb-12">
+          <a href="https://www.motel-one.com/en/hotels/manchester/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/sponsors/motel-one.svg" alt="Motel One" className="h-10 w-auto" />
+          </a>
         </div>
 
         <a
