@@ -66,7 +66,7 @@ export default function Speakers() {
         {/* CTA to apply to speak */}
         <div className="text-center mt-10">
           <a
-            href="#register"
+            href="mailto:ai-manchester@whatsthescore.co.uk?subject=Speaker%20Application%20%E2%80%94%20OpenClaw%20Manchester"
             className="inline-block px-6 py-3 rounded-lg border text-sm font-semibold transition-colors hover:bg-red-900/20 cursor-pointer"
             style={{ borderColor: "#E63946", color: "#E63946" }}
           >

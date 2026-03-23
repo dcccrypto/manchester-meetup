@@ -36,7 +36,7 @@ export default function Sponsors() {
         </div>
 
         <a
-          href="#register"
+          href="mailto:ai-manchester@whatsthescore.co.uk?subject=Sponsorship%20Enquiry%20%E2%80%94%20OpenClaw%20Manchester"
           className="inline-block px-6 py-3 rounded-lg border text-sm font-semibold transition-colors hover:bg-red-900/20 cursor-pointer"
           style={{ borderColor: "#E63946", color: "#E63946" }}
         >
