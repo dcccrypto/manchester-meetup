@@ -19,7 +19,7 @@ export default function Nav() {
           <a href="#speakers" className="hover:text-white transition-colors">Speakers</a>
           <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
           <a href="#sponsors" className="hover:text-white transition-colors">Sponsors</a>
-          <a href="#register" className="hover:text-white transition-colors">Register</a>
+          <a href="#register" className="hover:text-white transition-colors">Secure Your Spot on Luma</a>
         </div>
 
         <div className="flex items-center gap-3">
@@ -28,7 +28,7 @@ export default function Nav() {
             className="text-sm px-4 py-2 rounded font-semibold transition-opacity hover:opacity-90"
             style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
           >
-            🦞 Register Free
+            🦞 Secure Your Spot on Luma
           </a>
 
           {/* Mobile hamburger button */}
@@ -73,7 +73,7 @@ export default function Nav() {
           <a href="#speakers" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Speakers</a>
           <a href="#faq" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>FAQ</a>
           <a href="#sponsors" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Sponsors</a>
-          <a href="#register" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Register</a>
+          <a href="#register" className="text-gray-400 hover:text-white transition-colors py-1" onClick={() => setOpen(false)}>Secure Your Spot on Luma</a>
         </div>
       )}
     </nav>

@@ -11,9 +11,9 @@ export default function Registration() {
             <span style={{ color: "#E63946", fontSize: "1.4rem" }}>— 🦞 —</span>
           </div>
           <h2 className="text-4xl font-extrabold text-white mb-3">
-            <span style={{ color: "#E63946" }}>Grab Your Spot</span>
+            <span style={{ color: "#E63946" }}>Secure Your Spot on Luma</span>
           </h2>
-          <p className="text-gray-500">Free entry. Register now and join us in Manchester. 🦞</p>
+          <p className="text-gray-500">Free entry. Secure your spot on Luma and join us in Manchester. 🦞</p>
         </div>
 
         <div

@@ -51,7 +51,7 @@ export default function FAQ() {
             className="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-opacity hover:opacity-90"
             style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
           >
-            🦞 Register Free — I&apos;m In
+            🦞 Secure Your Spot on Luma
           </a>
         </div>
       </div>

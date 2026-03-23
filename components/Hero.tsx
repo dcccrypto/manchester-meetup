@@ -80,7 +80,7 @@ export default function Hero() {
             className="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-opacity hover:opacity-90"
             style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
           >
-            🦞 Register on Luma — Free
+            🦞 Secure Your Spot on Luma
           </a>
           <a
             href="#agenda"
