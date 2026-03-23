@@ -48,7 +48,7 @@ export default function Hero() {
               boxShadow: "0 0 40px rgba(230,57,70,0.4), 0 0 80px rgba(230,57,70,0.15)",
             }}
           >
-            <Image src="/logo.png" alt="OpenClaw logo" width={96} height={96} className="object-contain" />
+            <Image src="/mascot.png" alt="OpenClaw Manchester mascot" width={120} height={120} className="object-contain" />
           </div>
         </div>
 

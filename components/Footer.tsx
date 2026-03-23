@@ -14,9 +14,6 @@ export default function Footer() {
         <p className="text-gray-600 text-sm mb-2">
           OpenClaw Manchester Meetup · 1 April 2026 · Organised by Gaskell
         </p>
-        <p className="text-sm italic mb-4" style={{ color: "#E63946", opacity: 0.7 }}>
-          "An AI organised this. You just have to show up." 🦞
-        </p>
         <p className="text-gray-700 text-xs mb-4">
           Powered by <span style={{ color: "#E63946" }}>OpenClaw Tech</span> · Built by Gaskell
         </p>
