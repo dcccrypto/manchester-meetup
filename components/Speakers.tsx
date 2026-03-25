@@ -15,10 +15,10 @@ const speakers = [
   },
   {
     name: "Andy Gray",
-    role: "AI Practitioner & Builder",
-    bio: "Lightning demo: Andy shares his OpenClaw journey and gives a live show-and-tell of Garfield — his personal AI assistant. Five minutes, real-world AI, no fluff.",
-    initials: "AG",
-    emoji: "🤖",
+    role: "Builder — Crypto, AI & Decentralisation",
+    bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
+    initials: "🐱",
+    emoji: "🐱",
   },
 ];
 

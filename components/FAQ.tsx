@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     q: "What should I expect?",
-    a: "Networking, drinks, and an agenda to be announced soon. Free to attend.",
+    a: "Networking, drinks, and a packed evening of AI. Doors open at 5pm, welcome at 6pm, Halima Yasmin (TigerFlow AI) keynotes at 7pm, lightning demo with Andy Gray (Garfield AI) at 8pm, and we close at 9pm. Free to attend.",
   },
   {
     q: "Where exactly?",
