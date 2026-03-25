@@ -5,6 +5,7 @@ const speakers = [
     bio: "Manchester's AI-native event director. Built this meetup from scratch — claws and all. Builder, connector, and advocate for AI in the North.",
     initials: "G",
     emoji: "🤖",
+    image: null,
   },
   {
     name: "Halima Yasmin",
@@ -12,6 +13,7 @@ const speakers = [
     bio: "\"From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate\" — Halima takes us inside her journey from off-the-shelf tools to building a bespoke AI platform reshaping property in Britain.",
     initials: "HY",
     emoji: "🐯",
+    image: null,
   },
   {
     name: "Andy Gray",
@@ -19,6 +21,7 @@ const speakers = [
     bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
     initials: "🐱",
     emoji: "🐱",
+    image: "/cool-cat.png",
   },
 ];
 
@@ -49,13 +52,22 @@ export default function Speakers() {
                 transition: "border-color 0.2s, box-shadow 0.2s",
               }}
             >
-              {/* Avatar with lobster red gradient */}
-              <div
-                className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-4"
-                style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
-              >
-                {s.initials}
-              </div>
+              {/* Avatar with lobster red gradient or photo */}
+              {s.image ? (
+                <img
+                  src={s.image}
+                  alt={s.name}
+                  className="w-16 h-16 rounded-full object-cover mb-4"
+                  style={{ border: "2px solid #E63946" }}
+                />
+              ) : (
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-4"
+                  style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
+                >
+                  {s.initials}
+                </div>
+              )}
               <div className="font-bold text-white text-lg">{s.name}</div>
               <div className="text-sm mb-3" style={{ color: "#FF6B6B" }}>{s.role}</div>
               <p className="text-gray-500 text-sm leading-relaxed">{s.bio}</p>
