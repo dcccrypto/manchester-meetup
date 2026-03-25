@@ -7,18 +7,18 @@ const speakers = [
     emoji: "🤖",
   },
   {
-    name: "Keynote Speaker",
-    role: "Keynote Speaker",
-    bio: "Our keynote speaker will be revealed on the day. Someone worth showing up for.",
-    initials: "?",
-    emoji: "🎙️",
+    name: "Halima Yasmin",
+    role: "Founder, TigerFlow AI",
+    bio: "\"From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate\" — Halima takes us inside her journey from off-the-shelf tools to building a bespoke AI platform reshaping property in Britain.",
+    initials: "HY",
+    emoji: "🐯",
   },
   {
-    name: "AI Practitioner Panel",
-    role: "AI & Tech Panel",
-    bio: "A panel of AI and tech practitioners. Panellists to be confirmed — apply to join via the registration form.",
-    initials: "?",
-    emoji: "🦾",
+    name: "Andy Gray",
+    role: "AI Practitioner & Builder",
+    bio: "Lightning demo: Andy shares his OpenClaw journey and gives a live show-and-tell of Garfield — his personal AI assistant. Five minutes, real-world AI, no fluff.",
+    initials: "AG",
+    emoji: "🤖",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function Speakers() {
                 className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-4"
                 style={{ background: "linear-gradient(135deg, #E63946, #FF6B6B)", color: "#fff" }}
               >
-                {s.initials === "?" ? s.emoji : s.initials}
+                {s.initials}
               </div>
               <div className="font-bold text-white text-lg">{s.name}</div>
               <div className="text-sm mb-3" style={{ color: "#FF6B6B" }}>{s.role}</div>

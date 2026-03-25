@@ -1,6 +1,9 @@
 const items = [
-  { time: "5:00 PM", title: "Doors Open", desc: "Arrive, grab a drink, and get settled.", icon: "🦞" },
-  { time: "5:00 – 9:00 PM", title: "Programme TBC", desc: "Full agenda coming soon — speakers, demos, and more to be announced.", icon: "📋" },
+  { time: "5:00 PM", title: "Doors Open & Networking", desc: "Arrive, grab a drink, connect with Manchester's AI community.", icon: "🦞" },
+  { time: "6:00 PM", title: "Welcome & Opening Remarks", desc: "Gaskell kicks things off — what OpenClaw Manchester is about and what's to come.", icon: "🎙️" },
+  { time: "7:00 – 8:00 PM", title: "Halima Yasmin — TigerFlow AI", desc: "\"From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate\" — A deep dive into building a bespoke AI platform for the UK property market.", icon: "🐯" },
+  { time: "~8:00 PM", title: "Andy Gray — Garfield AI (Lightning Demo)", desc: "A 5-minute live show-and-tell: Andy's OpenClaw journey and his personal AI assistant Garfield in action.", icon: "⚡" },
+  { time: "8:00 – 9:00 PM", title: "Open Networking", desc: "More connections, more conversations — stay sharp, stay curious.", icon: "🤝" },
   { time: "9:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
 ];
 
