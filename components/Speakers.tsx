@@ -22,7 +22,7 @@ const speakers = [
     linkedin: "https://linkedin.com/in/will-faithfull/",
     initials: "WF",
     emoji: "🤔",
-    image: null,
+    image: "/faithfull-headshot.jpg",
   },
   {
     name: "Edidiong Asikpo",
