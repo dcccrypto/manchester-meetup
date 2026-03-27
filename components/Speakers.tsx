@@ -33,7 +33,7 @@ const speakers = [
     image: null,
   },
   {
-    name: "Matt",
+    name: "Edidiong Asikpo",
     role: "Principal Technologist, MongoDB",
     bio: "A builder's perspective on AI infrastructure from one of the world's leading database companies — what's possible today, and what's coming next.",
     initials: "M",
