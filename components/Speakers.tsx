@@ -26,7 +26,8 @@ const speakers = [
   {
     name: "William Faithfull, PhD",
     role: "CEO, ExaDev",
-    bio: "\"Does OpenClaw make AI SaaS redundant?\" — A provocation from the CEO of ExaDev. William challenges whether the rise of AI agents renders traditional SaaS business models obsolete.",
+    bio: "Dr. Will Faithfull is CEO of ExaDev, founding engineers on demand for tech and AI companies. A computer science PhD and active investor through ExaCap, Will grew ExaDev from two graduate students to a team of 17 engineers. He has worked in over a dozen startups across the UK, Silicon Valley, the Netherlands, Ireland and Australia, as well as for the likes of Sky, Google and Equal Experts.",
+    linkedin: "https://linkedin.com/in/will-faithfull/",
     initials: "WF",
     emoji: "🤔",
     image: null,
@@ -87,6 +88,17 @@ export default function Speakers() {
               <div className="font-bold text-white text-lg">{s.name}</div>
               <div className="text-sm mb-3" style={{ color: "#FF6B6B" }}>{s.role}</div>
               <p className="text-gray-500 text-sm leading-relaxed">{s.bio}</p>
+              {s.linkedin && (
+                <a
+                  href={s.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 text-xs font-medium hover:underline"
+                  style={{ color: "#0A66C2" }}
+                >
+                  LinkedIn →
+                </a>
+              )}
             </div>
           ))}
         </div>
