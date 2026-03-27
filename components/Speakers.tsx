@@ -23,6 +23,22 @@ const speakers = [
     emoji: "🐱",
     image: "/cool-cat.png",
   },
+  {
+    name: "William Faithfull, PhD",
+    role: "CEO, ExaDev",
+    bio: "\"Does OpenClaw make AI SaaS redundant?\" — A provocation from the CEO of ExaDev. William challenges whether the rise of AI agents renders traditional SaaS business models obsolete.",
+    initials: "WF",
+    emoji: "🤔",
+    image: null,
+  },
+  {
+    name: "Matt",
+    role: "Principal Technologist, MongoDB",
+    bio: "A builder's perspective on AI infrastructure from one of the world's leading database companies — what's possible today, and what's coming next.",
+    initials: "M",
+    emoji: "🍃",
+    image: null,
+  },
 ];
 
 export default function Speakers() {
