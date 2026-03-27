@@ -16,14 +16,6 @@ const speakers = [
     image: null,
   },
   {
-    name: "Andy Gray",
-    role: "Builder — Crypto, AI & Decentralisation",
-    bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
-    initials: "🐱",
-    emoji: "🐱",
-    image: "/cool-cat.png",
-  },
-  {
     name: "William Faithfull, PhD",
     role: "CEO, ExaDev",
     bio: "Dr. Will Faithfull is CEO of ExaDev, founding engineers on demand for tech and AI companies. A computer science PhD and active investor through ExaCap, Will grew ExaDev from two graduate students to a team of 17 engineers. He has worked in over a dozen startups across the UK, Silicon Valley, the Netherlands, Ireland and Australia, as well as for the likes of Sky, Google and Equal Experts.",
@@ -39,6 +31,14 @@ const speakers = [
     initials: "M",
     emoji: "🍃",
     image: null,
+  },
+  {
+    name: "Andy Gray",
+    role: "Builder — Crypto, AI & Decentralisation",
+    bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
+    initials: "🐱",
+    emoji: "🐱",
+    image: "/cool-cat.png",
   },
 ];
 
