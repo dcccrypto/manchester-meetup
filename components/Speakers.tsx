@@ -10,10 +10,12 @@ const speakers = [
   {
     name: "Halima Yasmin",
     role: "Founder, TigerFlow AI",
-    bio: "\"From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate\" — Halima takes us inside her journey from off-the-shelf tools to building a bespoke AI platform reshaping property in Britain.",
+    talk: "From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate",
+    bio: "Halima Yasmin is the founder of TigerFlow AI, building proprietary AI for UK real estate agents. She rebuilt her platform from GoHighLevel to a fully bespoke Claude.ai-powered system now live in production with paying clients.",
+    badge: "Keynote",
     initials: "HY",
     emoji: "🐯",
-    image: null,
+    image: "/halima-headshot.png",
   },
   {
     name: "William Faithfull, PhD",
@@ -85,8 +87,21 @@ export default function Speakers() {
                   {s.initials}
                 </div>
               )}
+              {s.badge && (
+                <span
+                  className="inline-block text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded mb-2"
+                  style={{ background: "#E63946", color: "#fff" }}
+                >
+                  {s.badge}
+                </span>
+              )}
               <div className="font-bold text-white text-lg">{s.name}</div>
-              <div className="text-sm mb-3" style={{ color: "#FF6B6B" }}>{s.role}</div>
+              <div className="text-sm mb-2" style={{ color: "#FF6B6B" }}>{s.role}</div>
+              {s.talk && (
+                <p className="text-xs italic mb-2" style={{ color: "#E63946" }}>
+                  &ldquo;{s.talk}&rdquo;
+                </p>
+              )}
               <p className="text-gray-500 text-sm leading-relaxed">{s.bio}</p>
               {s.linkedin && (
                 <a
