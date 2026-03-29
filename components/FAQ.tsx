@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     q: "What should I expect?",
-    a: "Networking, drinks, and a packed evening of AI. Doors open at 5pm, welcome at 6pm, Halima Yasmin (TigerFlow AI) keynotes at 7pm, then lightning talks from Andy Gray (Garfield AI), William Faithfull PhD (ExaDev), and Edidiong Asikpo (MongoDB) from 8pm. We close at 9pm. Free to attend.",
+    a: "Networking, drinks, and a packed evening of AI. Doors open at 5pm, welcome at 6pm, Halima Yasmin (TigerFlow AI) keynotes at 7pm, then talks from William Faithfull PhD (ExaDev) and Andy Gray (Garfield AI) from ~7:30pm. We close at 9pm. Free to attend.",
   },
   {
     q: "Where exactly?",

@@ -3,9 +3,9 @@ const items = [
   { time: "6:00 PM", title: "Welcome & Opening Remarks", desc: "Gaskell kicks things off — what OpenClaw Manchester is about and what's to come.", icon: "🎙️" },
   { time: "7:00 PM", title: "Halima Yasmin — TigerFlow AI (Keynote)", desc: "\"From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate\" — A deep dive into building a bespoke AI platform for the UK property market. 20–25 min keynote.", icon: "🐯" },
   { time: "~7:30 PM", title: "William Faithfull, PhD — ExaDev (Talk)", desc: "\"Does OpenClaw make AI SaaS redundant?\" — A provocation from the CEO of ExaDev.", icon: "🤔" },
-  { time: "~8:00 PM", title: "Edidiong Asikpo — MongoDB (Lightning Talk)", desc: "The Principal Technologist at MongoDB brings a builder's perspective on AI infrastructure and what's coming next.", icon: "🍃" },
-  { time: "~8:15 PM", title: "Andy Gray — Garfield AI (Lightning Demo)", desc: "A 5-minute live show-and-tell: Andy's OpenClaw journey and his personal AI assistant Garfield in action.", icon: "⚡" },
-  { time: "8:45 – 9:00 PM", title: "Open Networking", desc: "More connections, more conversations — stay sharp, stay curious.", icon: "🤝" },
+  { time: "~8:00 PM", title: "Andy Gray — Garfield AI (Lightning Demo)", desc: "A 5-minute live show-and-tell: Andy's OpenClaw journey and his personal AI assistant Garfield in action.", icon: "⚡" },
+  { time: "~8:15 PM", title: "Open Networking", desc: "Connect, collaborate, swap ideas — the best conversations happen off-stage.", icon: "🤝" },
+  { time: "8:45 – 9:00 PM", title: "Networking & Close", desc: "More connections, more conversations — stay sharp, stay curious. 🦞", icon: "👋" },
   { time: "9:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
 ];
 
