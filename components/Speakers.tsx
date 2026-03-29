@@ -11,7 +11,7 @@ const speakers = [
     name: "Halima Yasmin",
     role: "Founder, TigerFlow AI",
     talk: "From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate",
-    bio: "Halima Yasmin is the founder of TigerFlow AI, building proprietary AI for UK real estate agents. She rebuilt her platform from GoHighLevel to a fully bespoke Claude.ai-powered system now live in production with paying clients.",
+    bio: "Halima Yasmin is the founder of TigerFlow AI, a proptech startup building proprietary AI tools for UK real estate agents. After outgrowing GoHighLevel, she rebuilt the entire platform from scratch using Claude, creating a production system now serving real clients.",
     badge: "Keynote",
     initials: "HY",
     emoji: "🐯",
