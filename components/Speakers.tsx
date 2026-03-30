@@ -35,6 +35,16 @@ const speakers = [
     emoji: "🐱",
     image: "/cool-cat.png",
   },
+  {
+    name: "Toby Remond",
+    role: "Fractional CAIO & Founder, OptiBee",
+    talk: "From OpenClaw to AI Operating System: How I Built a 10x Productivity Layer for My Business",
+    bio: "Toby Remond is the founder of OptiBee, a Manchester-based AI consultancy helping SMEs become AI-first through education, consulting, and development. Having built his own AI operating system to run OptiBee sales, CRM, and daily operations, he brings hands-on experience.",
+    badge: "Lightning",
+    initials: "TR",
+    emoji: "⚡",
+    image: "/speakers/toby-remond-headshot.png",
+  },
 ];
 
 export default function Speakers() {
