@@ -28,6 +28,14 @@ const speakers = [
   },
 
   {
+    name: "Toby Remond",
+    role: "Speaker",
+    bio: "Talk details coming soon.",
+    initials: "TR",
+    emoji: "🎤",
+    image: "/speakers/toby-remond.jpg",
+  },
+  {
     name: "Andy Gray",
     role: "Builder — Crypto, AI & Decentralisation",
     bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
