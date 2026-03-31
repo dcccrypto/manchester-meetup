@@ -28,6 +28,24 @@ const speakers = [
   },
 
   {
+    name: "Toby Remond",
+    role: "Founder, OptiBee",
+    talk: "From OpenClaw to AI Operating System: How I Built a 10x Productivity Layer for My Business",
+    bio: "5 minutes on building an AI-first consultancy in Manchester.",
+    initials: "TR",
+    emoji: "🐝",
+    image: "/speakers/toby-remond.jpg",
+  },
+  {
+    name: "Lewis Crawford",
+    role: "Equal Experts — Office of AI",
+    talk: "Agent-oriented architecture",
+    bio: "Lewis is the founding member of the Office of AI at Equal Experts.",
+    initials: "LC",
+    emoji: "🏗️",
+    image: null,
+  },
+  {
     name: "Andy Gray",
     role: "Builder — Crypto, AI & Decentralisation",
     bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
