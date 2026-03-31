@@ -37,14 +37,7 @@ const speakers = [
     image: "/speakers/lewis-crawford.jpg",
     linkedin: "https://linkedin.com/in/lewiscrawford/",
   },
-  {
-    name: "Andy Gray",
-    role: "Builder — Crypto, AI & Decentralisation",
-    bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
-    initials: "🐱",
-    emoji: "🐱",
-    image: "/cool-cat.png",
-  },
+
 
 ];
 
