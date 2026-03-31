@@ -38,12 +38,13 @@ const speakers = [
   },
   {
     name: "Lewis Crawford",
-    role: "Equal Experts — Office of AI",
+    role: "Chief AI Office, Equal Experts",
     talk: "Agent-oriented architecture",
-    bio: "Lewis is the founding member of the Office of AI at Equal Experts.",
+    bio: "Lewis is the founding member of the Office of AI at Equal Experts. 20+ years in distributed systems, from petabyte-scale at the British Library to Big Data at Morgan Stanley. Europe's first Hadoop certified professional.",
     initials: "LC",
     emoji: "🏗️",
-    image: null,
+    image: "/speakers/lewis-crawford.jpg",
+    linkedin: "https://linkedin.com/in/lewiscrawford/",
   },
   {
     name: "Andy Gray",
