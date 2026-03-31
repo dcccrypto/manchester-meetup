@@ -28,15 +28,6 @@ const speakers = [
   },
 
   {
-    name: "Toby Remond",
-    role: "Founder, OptiBee",
-    talk: "From OpenClaw to AI Operating System: How I Built a 10x Productivity Layer for My Business",
-    bio: "5 minutes on building an AI-first consultancy in Manchester.",
-    initials: "TR",
-    emoji: "🐝",
-    image: "/speakers/toby-remond.jpg",
-  },
-  {
     name: "Lewis Crawford",
     role: "Chief AI Office, Equal Experts",
     talk: "Agent-oriented architecture",
