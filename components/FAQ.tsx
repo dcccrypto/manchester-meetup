@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     q: "What should I expect?",
-    a: "Networking, drinks, and a packed evening of AI. Doors open at 5pm, food at 6:10pm, Halima Yasmin (TigerFlow AI) keynotes at 7pm, then talks from William Faithfull PhD (ExaDev) at 7:30pm and Andy Gray (Garfield AI) at ~7:50pm. Open mic, raffle, and networking from 8pm. We close at 9pm. Free to attend.",
+    a: "A packed evening of AI talks, demos, and real conversations. Doors open at 5pm for networking and drinks. From 6pm, Gaskell opens the event, followed by talks from William Faithfull PhD (ExaDev), a keynote from Halima Yasmin (TigerFlow AI), lightning talks from Lewis Crawford (Equal Experts) and Toby Remond (OptiBee), plus an open mic and raffle from 8pm. Open networking runs until we close at 9pm. Completely free to attend.",
   },
   {
     q: "Where exactly?",
