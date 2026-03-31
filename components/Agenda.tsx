@@ -5,7 +5,7 @@ const items = [
   { time: "7:00 PM", title: "Halima Yasmin — TigerFlow AI (Keynote)", desc: "\"From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate\" — A deep dive into building a bespoke AI platform for the UK property market. 20–25 min keynote.", icon: "🐯" },
   { time: "7:30 PM", title: "William Faithfull, PhD — ExaDev (Talk)", desc: "\"Does OpenClaw make AI SaaS redundant?\" — A provocation from the CEO of ExaDev.", icon: "🤔" },
   { time: "~7:50 PM", title: "Andy Gray — Garfield AI (Lightning Demo)", desc: "A 5-minute live show-and-tell: Andy's OpenClaw journey and his personal AI assistant Garfield in action.", icon: "⚡" },
-  { time: "~7:55 PM", title: "Toby Remond — OptiBee (Lightning Talk)", desc: "\"From OpenClaw to AI Operating System: How I Built a 10x Productivity Layer for My Business\" — 5 minutes on building an AI-first consultancy in Manchester.", icon: "⚡" },
+
   { time: "8:00 PM", title: "Open Mic + Raffle", desc: "Got something to share? Grab the mic. Plus a raffle draw — you might win something sharp. 🦞", icon: "🎤" },
   { time: "~8:20 PM", title: "Open Networking", desc: "Connect, collaborate, swap ideas — the best conversations happen off-stage.", icon: "🤝" },
   { time: "9:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
