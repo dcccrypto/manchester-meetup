@@ -26,7 +26,6 @@ const speakers = [
     emoji: "🤔",
     image: "/faithfull-headshot.jpg",
   },
-
   {
     name: "Lewis Crawford",
     role: "Chief AI Office, Equal Experts",
@@ -38,15 +37,13 @@ const speakers = [
     linkedin: "https://linkedin.com/in/lewiscrawford/",
   },
   {
-    name: "Toby Remond",
-    role: "Founder, OptiBee",
-    talk: "From OpenClaw to AI Operating System: How I Built a 10x Productivity Layer for My Business",
-    bio: "5 minutes on building an AI-first consultancy in Manchester.",
-    initials: "TR",
-    emoji: "🐝",
-    image: "/speakers/toby-remond.jpg",
+    name: "Andy Gray",
+    role: "Builder — Crypto, AI & Decentralisation",
+    bio: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life… A 5-minute live show-and-tell. Andy is a builder at heart, drawn to the technologies reshaping value, ownership, and trust — crypto, decentralisation, and AI.",
+    initials: "🐱",
+    emoji: "🐱",
+    image: "/cool-cat.png",
   },
-
 ];
 
 export default function Speakers() {
