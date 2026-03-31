@@ -33,6 +33,13 @@ export default function Sponsors() {
             </a>
             <span className="text-xs text-gray-500">Serverless data platform</span>
           </div>
+          <div className="flex flex-col items-center gap-2">
+            <a href="https://www.equalexperts.com" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/sponsors/equal-experts.svg" alt="Equal Experts" className="h-10 w-auto" />
+            </a>
+            <span className="text-xs text-gray-500">Digital transformation consultancy</span>
+          </div>
         </div>
 
         <a
