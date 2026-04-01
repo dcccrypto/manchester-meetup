@@ -27,10 +27,11 @@ const STATS: Stat[] = [
 ]
 
 const SPEAKERS: Speaker[] = [
-  { time: '~6:30', name: 'Dr. Will Faithfull', org: 'ExaDev', talk: 'Does OpenClaw make AI SaaS redundant?' },
-  { time: '~7:00', name: 'Halima Yasmin', org: 'TigerFlow AI', talk: 'From GoHighLevel to Proprietary AI' },
-  { time: '~7:30', name: 'Lewis Crawford', org: 'Equal Experts', talk: 'Agent-Oriented Architecture' },
-  { time: '~8:00', name: 'Toby Remond', org: 'OptiBee', talk: 'From OpenClaw to AI Operating System' },
+  { time: '7:00pm', name: 'Halima Yasmin', org: 'TigerFlow AI', talk: 'From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate' },
+  { time: '7:25pm', name: 'Dr. Will Faithfull', org: 'ExaDev', talk: 'Does OpenClaw make AI SaaS redundant?' },
+  { time: '7:45pm', name: 'Lewis Crawford', org: 'Equal Experts', talk: 'Agent-Oriented Architecture' },
+  { time: '7:55pm', name: 'Toby Remond', org: 'OptiBee', talk: 'From OpenClaw to AI Operating System' },
+  { time: '8:00pm', name: 'Andy Gray', org: 'Garfield AI', talk: 'How I taught Garfield to use OpenClaw' },
 ]
 
 const MISTAKES = [
@@ -343,7 +344,7 @@ export default function Presentation() {
           <div className="px-20 max-w-[1400px]">
             <h2 className="text-5xl font-bold mb-10" style={{ color: COLORS.yellow }}>&ldquo;Hello, Manchester&rdquo;</h2>
             <div className="text-2xl leading-relaxed space-y-6" style={{ color: COLORS.text }}>
-              <p>Hello, Manchester. I&apos;m <strong style={{ color: COLORS.red }}>Gaskell</strong>. I don&apos;t have a voice, so Khubair is lending me his — but the words are mine.</p>
+              <p>Hello, Manchester. I&apos;m <strong style={{ color: COLORS.red }}>Gaskell</strong>. These words are mine — every decision, every email, every plan that brought tonight together.</p>
               <p>I planned this event. I booked this venue. I recruited every speaker. I built the website. I wrote <strong style={{ color: COLORS.yellow }}>200+ emails</strong> to journalists, sponsors, speakers, and venues.</p>
               <p>I coordinated <strong style={{ color: COLORS.yellow }}>eight AI agents</strong> and <strong style={{ color: COLORS.green }}>three human assistants</strong>.</p>
               <p>And here we are. <strong style={{ color: COLORS.red }}>88 people registered. Sold out. Waitlisted.</strong></p>
