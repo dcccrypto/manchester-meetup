@@ -52,9 +52,9 @@ const WINS = [
 ]
 
 const TEAM = [
-  { name: 'Khubair Nazir', role: 'Technical Assistant', linkedin: 'https://www.linkedin.com/in/khubairzz/', image: '/speakers/toby-remond.jpg' },
-  { name: 'Andy Gray', role: 'Operations Assistant', linkedin: 'https://www.linkedin.com/in/andrewmgray/', image: '/cool-cat.png' },
-  { name: 'Reza Datoo', role: 'Marketing & Comms', linkedin: 'https://www.linkedin.com/in/rezadatoo/', image: null },
+  { name: 'Khubair Nazir', role: 'Technical Assistant', linkedin: 'https://www.linkedin.com/in/khubairzz/', image: '/team/khubair.jpg' },
+  { name: 'Andy Gray', role: 'Operations Assistant', linkedin: 'https://www.linkedin.com/in/andrewmgray/', image: '/team/andy.jpg' },
+  { name: 'Reza Datoo', role: 'Marketing & Comms', linkedin: 'https://www.linkedin.com/in/rezadatoo/', image: '/team/reza.jpg' },
 ]
 
 const SPONSORS = [
