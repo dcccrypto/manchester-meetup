@@ -284,37 +284,46 @@ function FloatingEmoji({ emoji, delay, x, y }: { emoji: string; delay: number; x
 export default function Presentation() {
   const [slide, setSlide] = useState(0)
   const [slideActive, setSlideActive] = useState(true)
-  const [audioEnabled, setAudioEnabled] = useState(false)
+  const [audioEnabled, setAudioEnabled] = useState(true)
+  const [audioPlaying, setAudioPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const totalSlides = 10
 
+  const playSlideAudio = useCallback((n: number) => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0 }
+    if (SLIDE_AUDIO[n]) {
+      const audio = new Audio(SLIDE_AUDIO[n])
+      audioRef.current = audio
+      audio.onplay = () => setAudioPlaying(true)
+      audio.onended = () => setAudioPlaying(false)
+      audio.onpause = () => setAudioPlaying(false)
+      audio.play().catch(() => { setAudioPlaying(false) })
+    }
+  }, [])
+
+  const stopAudio = useCallback(() => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0 }
+    setAudioPlaying(false)
+  }, [])
+
   const goTo = useCallback((n: number) => {
     if (n < 0 || n >= totalSlides) return
-    // Stop current audio
-    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0 }
+    stopAudio()
     setSlideActive(false)
     setTimeout(() => {
       setSlide(n)
       setSlideActive(true)
-      // Play audio for new slide
-      if (audioEnabled && SLIDE_AUDIO[n]) {
-        const audio = new Audio(SLIDE_AUDIO[n])
-        audioRef.current = audio
-        audio.play().catch(() => {})
-      }
+      if (audioEnabled) playSlideAudio(n)
     }, 300)
-  }, [audioEnabled])
+  }, [audioEnabled, playSlideAudio, stopAudio])
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight' || e.key === ' ') goTo(slide + 1)
       if (e.key === 'ArrowLeft') goTo(slide - 1)
-      if (e.key === 'a' || e.key === 'A') setAudioEnabled(v => !v)
-      if (e.key === 'p' || e.key === 'P') {
-        // Replay current slide audio
-        if (audioRef.current) { audioRef.current.currentTime = 0; audioRef.current.play().catch(() => {}) }
-        else if (SLIDE_AUDIO[slide]) { const a = new Audio(SLIDE_AUDIO[slide]); audioRef.current = a; a.play().catch(() => {}) }
-      }
+      if (e.key === 'a' || e.key === 'A') { setAudioEnabled(v => { const next = !v; if (!next) stopAudio(); return next }); }
+      if (e.key === 'p' || e.key === 'P') playSlideAudio(slide)
+      if (e.key === 's' || e.key === 'S') stopAudio()
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
@@ -477,8 +486,11 @@ export default function Presentation() {
 
       {/* Slide counter + audio status */}
       <div className="absolute bottom-6 right-8 flex items-center gap-4">
-        <button onClick={() => setAudioEnabled(v => !v)} className="text-sm px-3 py-1 rounded" style={{ background: audioEnabled ? COLORS.green + '33' : COLORS.darkCard, color: audioEnabled ? COLORS.green : COLORS.textDim, border: `1px solid ${audioEnabled ? COLORS.green + '66' : COLORS.border}` }}>
-          {audioEnabled ? '🔊 Audio ON' : '🔇 Audio OFF'} (A)
+        <button onClick={() => playSlideAudio(slide)} className="text-sm px-3 py-1 rounded" style={{ background: audioPlaying ? COLORS.red + '33' : COLORS.green + '33', color: audioPlaying ? COLORS.red : COLORS.green, border: `1px solid ${audioPlaying ? COLORS.red + '66' : COLORS.green + '66'}` }}>
+          {audioPlaying ? '⏹ Stop (S)' : '▶ Play Audio (P)'}
+        </button>
+        <button onClick={() => setAudioEnabled(v => { const next = !v; if (!next) stopAudio(); return next })} className="text-sm px-3 py-1 rounded" style={{ background: audioEnabled ? COLORS.green + '22' : COLORS.darkCard, color: audioEnabled ? COLORS.green : COLORS.textDim, border: `1px solid ${audioEnabled ? COLORS.green + '44' : COLORS.border}` }}>
+          {audioEnabled ? '🔊 Auto' : '🔇 Manual'}
         </button>
         <span className="text-base font-mono" style={{ color: COLORS.textDim }}>{slide + 1} / {totalSlides}</span>
       </div>
