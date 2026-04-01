@@ -73,9 +73,10 @@ const SLIDE_AUDIO: Record<number, string> = {
   4: '/audio/slide-5.mp3',
   5: '/audio/slide-6.mp3',
   6: '/audio/slide-7.mp3',
-  7: '/audio/slide-team.mp3',
-  8: '/audio/slide-sponsors.mp3',
-  9: '/audio/slide-8.mp3',
+  7: '/audio/slide-qa.mp3',
+  8: '/audio/slide-team.mp3',
+  9: '/audio/slide-sponsors.mp3',
+  10: '/audio/slide-8.mp3',
 }
 
 // ── Slido Banner ──
@@ -288,7 +289,7 @@ export default function Presentation() {
   const [audioEnabled, setAudioEnabled] = useState(true)
   const [audioPlaying, setAudioPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
-  const totalSlides = 10
+  const totalSlides = 11
 
   const playSlideAudio = useCallback((n: number) => {
     if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0 }
@@ -438,8 +439,26 @@ export default function Presentation() {
           </div>
         )}
 
-        {/* ── SLIDE 8: The Humans Behind the Claws ── */}
+        {/* ── SLIDE 8: Ask Gaskell Anything ── */}
         {slide === 7 && (
+          <div className="w-full h-full flex flex-col items-center justify-center px-20">
+            <h2 className="text-6xl font-black mb-6" style={{ color: COLORS.yellow }}>Ask Gaskell Anything</h2>
+            <p className="text-2xl mb-10" style={{ color: COLORS.textDim }}>Fire your questions at me. I&apos;m reading them in real time.</p>
+            <div className="flex items-center gap-16">
+              <div className="bg-white p-6 rounded-2xl">
+                <img src={`https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${encodeURIComponent('https://app.sli.do/event/8PbALEG9hmBLgd6eHRwyPZ')}`} alt="Slido QR" width={400} height={400} />
+              </div>
+              <div className="text-center">
+                <p className="text-3xl font-bold mb-4" style={{ color: COLORS.text }}>Go to <span style={{ color: COLORS.red }}>sli.do</span></p>
+                <p className="text-8xl font-black tracking-wider" style={{ color: COLORS.yellow }}>#5767878</p>
+                <p className="text-xl mt-6" style={{ color: COLORS.textDim }}>or scan the QR code</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── SLIDE 9: The Humans Behind the Claws ── */}
+        {slide === 8 && (
           <div className="px-20 max-w-[1400px] w-full">
             <h2 className="text-5xl font-bold mb-12 text-center" style={{ color: COLORS.green }}>The Humans Behind the Claws</h2>
             <p className="text-center text-lg mb-10" style={{ color: COLORS.textDim }}>I&apos;m an AI. These three made it real.</p>
@@ -463,8 +482,8 @@ export default function Presentation() {
           </div>
         )}
 
-        {/* ── SLIDE 9: Thank You / Sponsors ── */}
-        {slide === 8 && (
+        {/* ── SLIDE 10: Thank You / Sponsors ── */}
+        {slide === 9 && (
           <div className="px-20 max-w-[1400px] w-full text-center">
             <h2 className="text-5xl font-bold mb-4" style={{ color: COLORS.yellow }}>Thank You</h2>
             <p className="text-xl mb-12" style={{ color: COLORS.textDim }}>Tonight wouldn&apos;t happen without these legends.</p>
@@ -485,7 +504,7 @@ export default function Presentation() {
         )}
 
         {/* ── SLIDE 10: Closing ── */}
-        {slide === 9 && (
+        {slide === 10 && (
           <div className="relative w-full h-full flex flex-col items-center justify-center px-20">
             <FloatingEmoji emoji="🐝" delay={0} x={200} y={150} />
             <FloatingEmoji emoji="🦞" delay={1} x={1500} y={200} />
