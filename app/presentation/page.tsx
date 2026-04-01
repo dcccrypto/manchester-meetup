@@ -282,6 +282,7 @@ function FloatingEmoji({ emoji, delay, x, y }: { emoji: string; delay: number; x
 // ██  MAIN PRESENTATION COMPONENT  ██
 // ══════════════════════════════════════════
 export default function Presentation() {
+  const [started, setStarted] = useState(false)
   const [slide, setSlide] = useState(0)
   const [slideActive, setSlideActive] = useState(true)
   const [audioEnabled, setAudioEnabled] = useState(true)
@@ -331,6 +332,27 @@ export default function Presentation() {
 
   return (
     <div className="w-screen h-screen overflow-hidden relative flex items-center justify-center" style={{ backgroundColor: COLORS.bg, fontFamily: 'Inter, sans-serif' }}>
+      {!started && (
+        <div className="absolute inset-0 z-[100] flex flex-col items-center justify-center" style={{ background: COLORS.bg }}>
+          <div className="text-6xl mb-6">🐝 🦞</div>
+          <div className="text-4xl font-black mb-4" style={{ color: COLORS.text }}>Open<span style={{ color: COLORS.red }}>Claw</span> Manchester</div>
+          <div className="text-lg mb-8" style={{ color: COLORS.textDim }}>Presentation — April 1, 2026</div>
+          <button
+            onClick={() => { setStarted(true); playSlideAudio(0); }}
+            className="px-10 py-4 rounded-xl text-xl font-bold transition-all hover:scale-105"
+            style={{ background: COLORS.red, color: '#fff' }}
+          >
+            ▶ Start Presentation (with audio)
+          </button>
+          <button
+            onClick={() => { setStarted(true); setAudioEnabled(false); }}
+            className="mt-4 px-6 py-2 rounded-lg text-sm transition-all hover:bg-white/5"
+            style={{ color: COLORS.textDim, border: `1px solid ${COLORS.border}` }}
+          >
+            Start without audio
+          </button>
+        </div>
+      )}
       <SlidoBanner />
 
       <div className="w-full h-full flex items-center justify-center transition-opacity duration-300 pt-12" style={{ opacity: slideActive ? 1 : 0 }}>
