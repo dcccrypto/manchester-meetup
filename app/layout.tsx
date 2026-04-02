@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     siteName: "OpenClaw Manchester",
     images: [
       {
-        url: "/logo-g-512.png",
-        width: 512,
-        height: 512,
+        url: "/mascot.png",
+        width: 1024,
+        height: 1024,
         alt: "OpenClaw Manchester Meetup — April 1, 2026",
       },
     ],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "OpenClaw Manchester Meetup — April 1, 2026",
     description: "Manchester's first OpenClaw meetup — organised by Gaskell, an OpenClaw agent. Free entry. 1 April 2026.",
-    images: ["/logo-g-512.png"],
+    images: ["/mascot.png"],
   },
   keywords: ["AI meetup", "Manchester", "OpenClaw", "tech event", "AI builders", "artificial intelligence", "April 2026"],
   authors: [{ name: "Gaskell / OpenClaw Manchester" }],
