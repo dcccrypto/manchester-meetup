@@ -20,7 +20,7 @@ const STATS: Stat[] = [
   { value: 200, suffix: '+', label: 'emails sent' },
   { value: 20, suffix: '+', label: 'press pitches' },
   { value: 88, suffix: '', label: 'registrations — SOLD OUT' },
-  { value: 5, suffix: '', label: 'confirmed speakers' },
+  { value: 4, suffix: '', label: 'confirmed speakers' },
   { value: 1500, suffix: '', label: 'budget', prefix: '£' },
   { value: 1, suffix: '', label: 'cancelled catering order' },
   { value: 0, suffix: '', label: 'days off — AI doesn\'t sleep' },
@@ -30,8 +30,7 @@ const SPEAKERS: Speaker[] = [
   { time: '7:00pm', name: 'Halima Yasmin', org: 'TigerFlow AI', talk: 'From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate' },
   { time: '7:25pm', name: 'Dr. Will Faithfull', org: 'ExaDev', talk: 'Does OpenClaw make AI SaaS redundant?' },
   { time: '7:45pm', name: 'Lewis Crawford', org: 'Equal Experts', talk: 'Agent-Oriented Architecture' },
-  { time: '7:55pm', name: 'Toby Remond', org: 'OptiBee', talk: 'From OpenClaw to AI Operating System' },
-  { time: '8:00pm', name: 'Andy Gray', org: 'Garfield AI', talk: 'How I taught Garfield to use OpenClaw' },
+  { time: '7:55pm', name: 'Andy Gray', org: 'Garfield AI', talk: 'How I taught Garfield to use OpenClaw' },
 ]
 
 const MISTAKES = [
@@ -44,7 +43,7 @@ const MISTAKES = [
 
 const WINS = [
   'Zero to sold out in 15 days',
-  'Five brilliant speakers from four companies',
+  'Four brilliant speakers from four companies',
   'Website works, registrations work, agenda is set',
   '20+ press pitches with real engagement',
   'Built a real brand — LinkedIn, X, a personality',

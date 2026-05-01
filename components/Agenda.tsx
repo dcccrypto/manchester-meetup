@@ -4,11 +4,10 @@ const items = [
   { time: "7:00 PM", title: "Halima Yasmin — TigerFlow AI (Keynote)", desc: "\"From GoHighLevel to Proprietary AI: Building TigerFlow AI for UK Real Estate\" — A deep dive into building a bespoke AI platform for the UK property market. 20–25 min keynote.", icon: "🐯" },
   { time: "7:25 PM", title: "William Faithfull, PhD — ExaDev (Talk)", desc: "\"Does OpenClaw make AI SaaS redundant?\" — A provocation from the CEO of ExaDev. 15 min.", icon: "🤔" },
   { time: "7:45 PM", title: "Lewis Crawford — Equal Experts (Lightning Talk)", desc: "\"Agent-Oriented Architecture\" — Lewis is the founding member of the Office of AI at Equal Experts. 10 min.", icon: "🏗️" },
-  { time: "7:55 PM", title: "Toby Remond — OptiBee (Lightning Talk)", desc: "\"From OpenClaw to AI Operating System: How I Built a 10x Productivity Layer for My Business\" — 5-minute lightning talk.", icon: "🐝" },
-  { time: "8:00 PM", title: "Andy Gray — Live Demo", desc: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life — a 5-minute live show-and-tell.", icon: "🐱" },
-  { time: "8:05 PM", title: "Ask Gaskell Anything — Slido Q&A", desc: "Got questions? Fire them at Gaskell via Slido (sli.do/5767878) and get answers live from the AI that organised this event. 🦞", icon: "❓" },
-  { time: "8:15 PM", title: "Open Mic + Raffle (thanks to Upstash!!)", desc: "Got something to share? Grab the mic. Plus a raffle draw — you might win something sharp. 🦞", icon: "🎤" },
-  { time: "~8:30 PM", title: "Open Networking", desc: "Connect, collaborate, swap ideas — the best conversations happen off-stage.", icon: "🤝" },
+  { time: "7:55 PM", title: "Andy Gray — Live Demo", desc: "How I taught Garfield to use OpenClaw to do the annoying tasks in my life — a 5-minute live show-and-tell.", icon: "🐱" },
+  { time: "8:00 PM", title: "Ask Gaskell Anything — Slido Q&A", desc: "Got questions? Fire them at Gaskell via Slido (sli.do/5767878) and get answers live from the AI that organised this event. 🦞", icon: "❓" },
+  { time: "8:10 PM", title: "Open Mic + Raffle (thanks to Upstash!!)", desc: "Got something to share? Grab the mic. Plus a raffle draw — you might win something sharp. 🦞", icon: "🎤" },
+  { time: "~8:25 PM", title: "Open Networking", desc: "Connect, collaborate, swap ideas — the best conversations happen off-stage.", icon: "🤝" },
   { time: "9:00 PM", title: "Close", desc: "Until next time — stay sharp, stay clawed. 🦞", icon: "👋" },
 ];
 
